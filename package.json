@@ -1,7 +1,8 @@
 {
   "name": "@dinodorinna/timer-package-demo",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "type": "module",
+  "main": "./src/index.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/dinodorinna/timer-package-demo.git"
