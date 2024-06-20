@@ -1,23 +1,12 @@
 import { convertToTimeLeft } from "./timer";
 
 describe("Timer Test", () => {
-  test("should be 1 milisecond", () => {
-    expect(convertToTimeLeft(1)).toEqual({
-      day: 0,
-      hour: 0,
-      minute: 0,
-      second: 0,
-      milisecond: 1,
-    });
-  });
-
   test("should be 1 second", () => {
     expect(convertToTimeLeft(1000)).toEqual({
       day: 0,
       hour: 0,
       minute: 0,
       second: 1,
-      milisecond: 0,
     });
   });
 
@@ -27,7 +16,6 @@ describe("Timer Test", () => {
       hour: 0,
       minute: 1,
       second: 0,
-      milisecond: 0,
     });
   });
 
@@ -37,7 +25,6 @@ describe("Timer Test", () => {
       hour: 1,
       minute: 0,
       second: 0,
-      milisecond: 0,
     });
   });
 
@@ -47,7 +34,6 @@ describe("Timer Test", () => {
       hour: 0,
       minute: 0,
       second: 0,
-      milisecond: 0,
     });
   });
 
@@ -57,7 +43,6 @@ describe("Timer Test", () => {
       hour: 0,
       minute: 1,
       second: 0,
-      milisecond: 0,
     });
   });
 });
