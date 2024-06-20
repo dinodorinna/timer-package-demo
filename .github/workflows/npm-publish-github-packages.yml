@@ -31,6 +31,7 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
           always-auth: true
+          scope: "@dinodorinna"
       - run: yarn install --frozen-lockfile
       - run: yarn publish
         env:
