@@ -1,7 +1,6 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "timer-package-demo",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
