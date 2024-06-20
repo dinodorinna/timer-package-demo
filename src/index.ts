@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { TimeLeft } from "./type";
 import { convertToTimeLeft } from "./util/timer";
 
-export function useCountDownTimer(counterMs: number): TimeLeft {
-  const leftCounterMs = useRef(counterMs);
+export function useCountDownTimer(counterSecond: number): TimeLeft {
+  const leftCounterMs = useRef(counterSecond);
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(
-    convertToTimeLeft(counterMs)
+    convertToTimeLeft(counterSecond)
   );
 
   useEffect(() => {
